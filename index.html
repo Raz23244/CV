@@ -1,494 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive ecommerce website design tutorial</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- custom css file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>RESUME RAZ</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Raz</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT US</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">SERVICE</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/Raz23244">
+                <div class="div">
+                    GitHub
+                </div>                
+            </a>
 
-<!-- header section starts  -->
-
-<header>
-
-    <div id="menu-bar" class="fas fa-bars"></div>
-
-    <a href="#" class="logo">nike</a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#products">products</a>
-        <a href="#featured">featured</a>
-        <a href="#review">review</a>
-    </nav>
-
-    <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
     </div>
 
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="slide-container active">
-        <div class="slide">
-            <div class="content">
-                <span>nike red shoes</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img.jpg" alt="">
             </div>
-            <div class="image">
-                <img src="images/home-shoe-1.png" class="shoe" alt="">
-                <img src="images/home-text-1.png" class="text" alt="">
+            <h1>RAZ BAGHDASARYAN</h1>
+            <h2>Web proggrammer </h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/bag_jan232/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@bass.baghdasaryan"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/razmik-bagdasar-8b6b5b253/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="slide-container">
-        <div class="slide">
-            <div class="content">
-                <span>nike blue shoes</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="image">
-                <img src="images/home-shoe-2.png" class="shoe" alt="">
-                <img src="images/home-text-2.png" class="text" alt="">
-            </div>
-        </div>
-    </div>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hello, Me Name is Raz im am web desinger.</span> </p>
 
-    <div class="slide-container">
-        <div class="slide">
-            <div class="content">
-                <span>nike yellow shoes</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="image">
-                <img src="images/home-shoe-3.png" class="shoe" alt="">
-                <img src="images/home-text-3.png" class="text" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
-    <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- service section starts  -->
-
-<section class="service">
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-shipping-fast"></i>
-            <h3>fast delivery</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-undo"></i>
-            <h3>10 days replacements</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-headset"></i>
-            <h3>24 x 7 support</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- service section ends -->
-
-<!-- products section starts  -->
-
-<section class="products" id="products">
-
-    <h1 class="heading"> latest <span>products</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <img src="images/product-1.png" alt="">
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Data</strong>
+                            26-11-2008
+                        </li>
+                        <li>
+                            <strong>Telephone</strong>
+                            +37493517037
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            razmikbagdasayan01@mail.ru
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            itartashat.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                                Masis Artashat, Armenia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
                 </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <img src="images/product-2.png" alt="">
-            <<div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <a href="Game/Game.html">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Game</span>
+                            </div>                            
+                        </a>
+                        <a href="Photo.html">
+                            <div class="interes">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Photo</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <a href="#" class="btn">add to cart</a>
             </div>
+            <button>
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <img src="images/product-3.png" alt="">
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="mindiv">
+                        <div class="barra-skill1">
+                            <div class="progreso1">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="mindiv">
+                        <div class="barra-skill2">
+                            <div class="progreso2">
+                                <span>97%</span>
+                            </div>
+                        </div>                            
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="mindiv">
+                        <div class="barra-skill3">
+                            <div class="progreso3">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <!-- Professional Skills -->
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+        </div>
+        <div>
+            <h1>Hello, my name is Raz, I am 15 years old and I live in the city of Artashat.
+I studied at the "Armat" programming center for 1 year and studied the "Aghves" program. I moved to the "IT Artashat" center.So I have reached my goal and completed the webcasting.</h2>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a class="a" href="Portfolio/RESTORAN/kayq.html">
+                <div class="proyecto">
+                    <img src="restoran.jpg" alt="">
+                    <div class="overlay">
+                        <h3>RESTORANT</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/desinic-master/index.html">
+                <div class="proyecto">
+                    <img src="portfolio.svg" alt="">
+                    <div class="overlay">
+                        <h3>Smart Shopping</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/Food Website/index.html">
+                <div class="proyecto">
+                    <img src="BURGER.png" alt="">
+                    <div class="overlay">
+                        <h3>Food Website</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/ecommerce website/index.html">
+                <div class="proyecto">
+                    <img src="Koshik.png" alt="">
+                    <div class="overlay">
+                        <h3>Nike Webstie</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/Books-bootstrap-website-master/src/Index.html">
+                <div class="proyecto">
+                    <img src="image.png" alt="">
+                    <div class="overlay">
+                        <h3>Book Webstie</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/LC09-ecommerce-website-master/index.html">
+                <div class="proyecto">
+                    <img src="Shop.png" alt="">
+                    <div class="overlay">
+                        <h3>Shop</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+
             </div>
-            <img src="images/product-4.png" alt="">
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Number">
+                    <input type="text" placeholder="Number for telephone">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="About"></textarea>
+                    <button>
+                        Enter Messenge <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
                 </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <img src="images/product-5.png" alt="">
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Artashat, Masis gyux
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Phone: +37493517037
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: razmikbagdasar01@mail.ru
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <a href="#" class="btn">add to cart</a>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <img src="images/product-6.png" alt="">
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://www.instagram.com/bag_jan232/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100086621080516"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@bass.baghdasaryan"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/razmik-bagdasar-8b6b5b253/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
+    </footer>
 
-    </div>
-
-</section>
-
-<!-- products section ends -->
-
-<!-- featured section starts  -->
-
-<section class="featured" id="featured">
-
-    <h1 class="heading"> <span>featured</span> products </h1>
-
-    <div class="row">
-        <div class="image-container">
-            <div class="small-image">
-                <img src="images/f-img-1.1.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.2.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.3.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.4.png" class="featured-image-1" alt="">
-            </div>
-            <div class="big-image">
-                <img src="images/f-img-1.1.png" class="big-image-1" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <h3>new nike airmax shoes</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="image-container">
-            <div class="small-image">
-                <img src="images/f-img-2.1.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.2.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.3.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.4.png" class="featured-image-2" alt="">
-            </div>
-            <div class="big-image">
-                <img src="images/f-img-2.1.png" class="big-image-2" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <h3>new nike airmax shoes</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="image-container">
-            <div class="small-image">
-                <img src="images/f-img-3.1.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.2.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.3.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.4.png" class="featured-image-3" alt="">
-            </div>
-            <div class="big-image">
-                <img src="images/f-img-3.1.png" class="big-image-3" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <h3>new nike airmax shoes</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-    </div>
-
-</section>
-
-<!-- featured section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading"> customer's <span>review</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/pic1.png" alt="">
-            <h3>john deo</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores? Exercitationem, unde rem.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/pic2.png" alt="">
-            <h3>john deo</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores? Exercitationem, unde rem.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/pic3.png" alt="">
-            <h3>john deo</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores? Exercitationem, unde rem.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- review section ends -->
-
-<!-- newsletter section starts  -->
-
-<section class="newsletter">
-
-    <div class="content">
-        <h3>monthly newsletter</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam veniam at itaque culpa hic corporis saepe dicta doloremque nihil.</p>
-        <form action="">
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="submit" value="send" class="btn">
-        </form>
-    </div>
-
-</section>
-
-<!-- newsletter section ends -->
-
-<!-- footer section  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>our stores</h3>
-            <a href="#">india</a>
-            <a href="#">USA</a>
-            <a href="#">japan</a>
-            <a href="#">paris</a>
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">products</a>
-            <a href="#">featured</a>
-            <a href="#">review</a>
-        </div>
-
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#">my account</a>
-            <a href="#">my favorite</a>
-            <a href="#">my orders</a>
-            <a href="#">newsletter</a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-            <a href="#">linkedin</a>
-        </div>
-
-        <div class="credit">created by <span> mr. web designer </span> | all rights reserved</div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
