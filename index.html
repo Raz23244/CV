@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>RESUME RAZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Raz</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">SERVICE</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/Raz23244/test">
+                <div class="div">
+                    GitHub
+                </div>                
+            </a>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img.jpg" alt="">
+            </div>
+            <h1>RAZ BAGHDASARYAN</h1>
+            <h2>Web proggrammer </h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/bag_jan232/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@bass.baghdasaryan"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/razmik-bagdasar-8b6b5b253/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hello, Me Name is Raz im am web desinger.</span> </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Data</strong>
+                            26-11-2008
+                        </li>
+                        <li>
+                            <strong>Telephone</strong>
+                            +37493517037
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            razmikbagdasayan01@mail.ru
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            itartashat.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                                Masis Artashat, Armenia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <a href="Game/Game.html">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Game</span>
+                            </div>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="mindiv">
+                        <div class="barra-skill1">
+                            <div class="progreso1">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="mindiv">
+                        <div class="barra-skill2">
+                            <div class="progreso2">
+                                <span>97%</span>
+                            </div>
+                        </div>                            
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="mindiv">
+                        <div class="barra-skill3">
+                            <div class="progreso3">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+        </div>
+        <div>
+            <h1>Hello, my name is Raz, I am 15 years old and I live in the city of Artashat.
+I studied at the "Armat" programming center for 1 year and studied the "Aghves" program. I moved to the "IT Artashat" center.So I have reached my goal and completed the webcasting.</h2>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a class="a" href="Portfolio/RESTORAN/kayq.html">
+                <div class="proyecto">
+                    <img src="restoran.jpg" alt="">
+                    <div class="overlay">
+                        <h3>RESTORANT</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/desinic-master/index.html">
+                <div class="proyecto">
+                    <img src="portfolio.svg" alt="">
+                    <div class="overlay">
+                        <h3>Smart Shopping</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/Food Website/index.html">
+                <div class="proyecto">
+                    <img src="BURGER.png" alt="">
+                    <div class="overlay">
+                        <h3>Food Website</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/ecommerce website/index.html">
+                <div class="proyecto">
+                    <img src="Koshik.png" alt="">
+                    <div class="overlay">
+                        <h3>Nike Webstie</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/Books-bootstrap-website-master/src/Index.html">
+                <div class="proyecto">
+                    <img src="image.png" alt="">
+                    <div class="overlay">
+                        <h3>Book Webstie</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+                <a href="Portfolio/LC09-ecommerce-website-master/index.html">
+                <div class="proyecto">
+                    <img src="Shop.png" alt="">
+                    <div class="overlay">
+                        <h3>Shop</h3>
+                        <p>Creator Raz</p>
+                    </div>
+                </div>                    
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Number">
+                    <input type="text" placeholder="Number for telephone">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="About"></textarea>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Artashat, Masis gyux
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Phone: +37493517037
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: razmikbagdasar01@mail.ru
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://www.instagram.com/bag_jan232/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100086621080516"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@bass.baghdasaryan"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/razmik-bagdasar-8b6b5b253/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
